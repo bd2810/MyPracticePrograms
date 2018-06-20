@@ -88,29 +88,28 @@ public class LinkedListRemoveDuplicates {
 
 	static SinglyLinkedListNode distinct(SinglyLinkedListNode head) {
 
-		SinglyLinkedListNode ptr2 = null;
-		SinglyLinkedListNode ptr1 = head;
+		SinglyLinkedListNode node1 = head;
+		SinglyLinkedListNode node2 = null;		
 
-		while (ptr1 != null && ptr1.next != null) {
-			ptr2 = ptr1;
+		while (node1 != null && node1.next != null) {
+			
+			node2 = node1;
 
 			/*
 			 * Compare the picked element with rest of the elements
 			 */
-			while (ptr2.next != null) {
+			while (node2.next != null) {
 
 				/* If duplicate then delete it */
-				if (ptr1.data == ptr2.next.data) {
+				if (node1.data == node2.next.data) {
 
-					/* sequence of steps is important here */
-					//dup = ptr2.next;
-					ptr2.next = ptr2.next.next;
-					//System.gc();
-				} else /* This is tricky */ {
-					ptr2 = ptr2.next;
+					node2.next = node2.next.next;
+					
+				} else {
+					node2 = node2.next;
 				}
 			}
-			ptr1 = ptr1.next;
+			node1 = node1.next;
 		}
 
 		return head;
@@ -126,13 +125,9 @@ public class LinkedListRemoveDuplicates {
 
 		int headCount = scanner.nextInt();
 
-		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
 		for (int i = 0; i < headCount; i++) {
 
 			int headItem = scanner.nextInt();
-
-			scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
 			head.insertNode(headItem);
 
@@ -145,8 +140,6 @@ public class LinkedListRemoveDuplicates {
 		bufferedWriter.newLine();
 
 		bufferedWriter.close();
-
-		// System.out.println(res);
 
 		scanner.close();
 
