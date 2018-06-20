@@ -1,3 +1,7 @@
+/*
+ * Write a program to reverse a String
+ */
+
 package programs;
 
 import java.util.Scanner;
@@ -7,15 +11,15 @@ public class ReverseString {
 	private static Scanner scan;
 
 	public static void main(String[] args) {
-		
+
 		scan = new Scanner(System.in);
-		
+
 		String str = scan.next();
-		
-		System.out.println(reverse(str));		
+
+		System.out.println(reverse(str));
 
 	}
-	
+
 	public static String reverse(String str) {
 
 		char[] chs = str.toCharArray();
