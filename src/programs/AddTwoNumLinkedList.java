@@ -56,7 +56,7 @@ public class AddTwoNumLinkedList {
 			sb1.append(String.valueOf(n1.data));
 			n1 = n1.next;
 		}
-		
+
 		while (n2 != null) {
 			
 			sb2.append(String.valueOf(n2.data));
@@ -78,7 +78,9 @@ public class AddTwoNumLinkedList {
 		
 		int number = finalNum;
 		int reverseNum = 0;
-	    while (finalNum > 0)
+	    
+		// The below while loop will reverse the integer i.e 123 will become 321
+		while (finalNum > 0)
 	    {
 	    	reverseNum = reverseNum * 10 + finalNum % 10;
 	        finalNum = finalNum / 10;
@@ -86,6 +88,7 @@ public class AddTwoNumLinkedList {
 	    
 	    System.out.println("Reversed final number is: " + reverseNum);
 	    
+	    // The below while loop will insert each separate digit from an integer to the list
 	    while (number > 0) {
 	    	finalList.insertNode(number % 10);
 	    	number = number / 10;
