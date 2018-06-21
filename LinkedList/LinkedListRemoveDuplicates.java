@@ -5,7 +5,7 @@
  * removing all duplicate integers. 
  */
 
-package programs;
+
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
