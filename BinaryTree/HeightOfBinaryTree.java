@@ -23,7 +23,7 @@ class Node {
 	}
 }
 
-public class heightOfBinaryTree {
+public class HeightOfBinaryTree {
 	/*
 	 * class Node int data; Node left; Node right;
 	 */
