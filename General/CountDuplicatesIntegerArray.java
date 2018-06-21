@@ -3,7 +3,7 @@
   If an integer say '3' is repeated twice, it will be counted a two duplicates.
  */
 
-package programs;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -3,7 +3,7 @@
   If the character say 'a' is repeated twice, it will still be counted as one duplicate character.
  */
 
-package programs;
+
 
 import java.util.HashMap;
 import java.util.Map;

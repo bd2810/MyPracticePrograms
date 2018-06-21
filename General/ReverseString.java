@@ -2,7 +2,7 @@
  * Write a program to reverse a String
  */
 
-package programs;
+
 
 import java.util.Scanner;
 
