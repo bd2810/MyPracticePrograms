@@ -1,3 +1,9 @@
+
+/*
+ * write a program to find the longest unique substring
+ * For e.g input = "abcadabce" ---> output = "dabce"
+ */
+
 import java.util.HashSet;
 
 public class LongestUniqueSubstring {
@@ -6,8 +12,8 @@ public class LongestUniqueSubstring {
 
 		HashSet<Character> set = new HashSet<Character>();
 
-		String longestOverAll = "";
-		String longestTillNow = "";
+		String longestUniqueSubString = "";
+		String substr = "";
 
 		int i = 0;
 		while (i < input.length()) {
@@ -15,25 +21,25 @@ public class LongestUniqueSubstring {
 			char c = input.charAt(i);
 
 			if (set.contains(c)) {
-				i = i - (longestTillNow.length() - 1);
-				longestTillNow = "";
+				i = i - (substr.length() - 1);
+				substr = "";
 				set.clear();
 			} else {
-				longestTillNow += c;
+				substr += c;
 				set.add(c);
 				i++;
 			}
 
-			if (longestTillNow.length() > longestOverAll.length()) {
-				longestOverAll = longestTillNow;
+			if (substr.length() > longestUniqueSubString.length()) {
+				longestUniqueSubString = substr;
 			}
 		}
 
-		return longestOverAll;
+		return longestUniqueSubString;
 	}
 
 	public static void main(String[] args) {
-		String input = "abcad";
+		String input = "abcadabce";
 		System.out.println(subString(input));
 	}
 
