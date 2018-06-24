@@ -1,7 +1,4 @@
-/*
-  Write a program to count the number of duplicates in an Integer array
-  If an integer say '3' is repeated twice, it will be counted a two duplicates.
- */
+
 
 
 

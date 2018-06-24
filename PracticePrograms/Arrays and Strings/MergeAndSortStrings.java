@@ -1,8 +1,4 @@
-/*
- * Given a list of Strings, merge all the Strings in a single string in a sorted order.
- * Input: ["acb", "dab", "hcd"]
- * Output: "aabbccddh"
- */
+
 
 
 import java.util.Arrays;

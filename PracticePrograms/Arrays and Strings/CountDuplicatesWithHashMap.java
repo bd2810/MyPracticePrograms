@@ -1,7 +1,4 @@
-/*
-  Write a program to count the number of duplicate characters in a String using HashMap.
-  If the character say 'a' is repeated twice, it will still be counted as one duplicate character.
- */
+
 
 
 
