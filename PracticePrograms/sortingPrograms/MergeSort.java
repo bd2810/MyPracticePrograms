@@ -1,3 +1,5 @@
+package sortingPrograms;
+
 
 public class MergeSort {
 

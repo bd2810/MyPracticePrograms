@@ -1,8 +1,10 @@
+package arraysAndStrings;
 
 /*
  * Implement an algorithm to determine if a string has all unique characters. What if you
  * cannot use additional data structures?
  */
+
 public class isUnique {
 
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package BestTimeToBuyAndSellStocks;
+
 /**
  * Say you have an array for which the ith elements is the price of a given
  * stock on day i Design an algorithm to find the maximum profit You may

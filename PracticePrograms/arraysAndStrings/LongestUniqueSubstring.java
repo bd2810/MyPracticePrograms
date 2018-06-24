@@ -1,4 +1,4 @@
-
+package arraysAndStrings;
 
 /*
  * write a program to find the longest unique substring
