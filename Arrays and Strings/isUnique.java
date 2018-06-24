@@ -53,5 +53,31 @@ public class isUnique {
 		}
 		return true;
 	}
+	
+	// Method 3: It assumes string only has letters a through z.
+	// Refer youtube video for explanation - https://www.youtube.com/watch?v=rcsjJQiZQcQ
+	// It uses bit-wise operators
+	// 0000000....000000000
+	// zyx.............dcba
+	public static boolean isUniqueChar(String str) {
+		
+		if (str.length() > 26) { // Only 26 characters
+			return false;
+		}
+		int checker = 0; // In 32-bits it is represented as 0000....00000 (32 0s)
+		
+		for (int i = 0; i < str.length(); i++) {
+			
+			int val = str.charAt(i) - 'a';	// for str.charAt(i) = b ... it would be 98 - 97 = 1
+			
+			// The below condition will occur whenever there is already a 1 in it's position 
+			// and & operation will result in 1 which is > 0
+			if ((checker & (1 << val)) > 0) { 	// 1 << val means shift 1 (000...0001) by 1. It will be (000...001) --> (000...010)
+				return false;		// bit-wise & operation between checker (000..000) and (000...010) --> (000...000)
+			}
+			checker |= (1 << val);	// checker = checker (000...000) + 1 << val (000..001) --> (000..001)
+		}
+		return true;
+	}
 
 }
