@@ -27,36 +27,30 @@ public class PrintLinkedList {
 		
 	}
 	
-	// First - Create a class LinkedList which we can instantiate with head nodes
+	// First - Create a class LinkedList with display method
 	private static class LinkedList {
-		
-		private ListNode head;
-		
-		public LinkedList() {
-			
-			this.head = null;
-		}	
-		
+
 		// Display method to display all the elements it holds using head node
 		public void display(ListNode head) {
-			
+
 			if (head == null) {
 				return;
 			}
-			
+
 			ListNode current = head;
-			
-			// Loop each element till the end of the list. last node points to null
-			while(current != null) {
-				System.out.print(current.data + " --> ");	// prints current node's data
+
+			// Loop each element till the end of the list. last node points to
+			// null
+			while (current != null) {
+				System.out.print(current.data + " --> "); // prints current
+															// node's data
 				current = current.next;
 			}
-			
-			System.out.print(current);	// Here current will be null
+
+			System.out.print(current); // Here current will be null
 		}
-		
-	}
-	
+
+	}	
 	
 	// Second create a class ListNode which we can instantiate in our program 
 	//with data and next node
