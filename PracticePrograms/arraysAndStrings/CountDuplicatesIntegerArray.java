@@ -1,7 +1,8 @@
 package arraysAndStrings;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class CountDuplicatesIntegerArray {
@@ -27,21 +28,34 @@ public class CountDuplicatesIntegerArray {
 	public static int countDuplicates(int[] array) {
 
 		int duplicates = 0;
-
-		ArrayList<Integer> newArray = new ArrayList<Integer>();
+	
+		Map<Integer, Integer> repetitions = new HashMap<Integer, Integer>();
 
 		for (int i = 0; i < array.length; i++) {
 
-			if (newArray.contains(array[i])) {
+			if (repetitions.containsKey(array[i])) {
 
-				duplicates += 1;
+				repetitions.put(array[i], repetitions.get(array[i]) + 1);
 
 			} else {
-				newArray.add(array[i]);
+
+				repetitions.put(array[i], 1);
 			}
 		}
 
+		System.out.println(repetitions);
+
+		for (Map.Entry<Integer, Integer> e : repetitions.entrySet()) {
+
+			if (e.getValue() > 1) {
+
+				duplicates += 1;
+			}
+
+		}
+
 		return duplicates;
+	
 	}
 
 }
