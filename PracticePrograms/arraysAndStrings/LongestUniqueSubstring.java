@@ -1,9 +1,9 @@
-package arraysAndStrings;
-
 /*
  * write a program to find the longest unique substring
  * For e.g input = "abcadabce" ---> output = "dabce"
  */
+
+package arraysAndStrings;
 
 import java.util.HashSet;
 
