@@ -1,19 +1,18 @@
-package LinkedList;
-
 /*
- * Interview question asked for Visa via HackerRank
+ * Visa
  * Input size of integer array, than input the integers.
  * Complete the 'distinct' function below to return a non redundant linked list 
  * removing all duplicate integers. 
  */
 
+package LinkedList;
+
 import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
-public class LinkedListRemoveDuplicates {
+public class LinkedListRemoveDuplicates_Int {
 
 	static class SinglyLinkedListNode {
 

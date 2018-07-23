@@ -1,6 +1,3 @@
-package BinaryTree;
-
-
 /*
  * The height of a binary tree is the number of edges between the tree's root and its farthest leaf.
  * Calculate the 'height' function below to calculate the height of the binary tree.
@@ -10,6 +7,8 @@ package BinaryTree;
  * Note: In a binary search tree, all nodes on the left branch of a node are less than the node value. 
  * All values on the right branch are greater than the node value.
  */
+
+package BinaryTree;
 
 import java.util.Scanner;
 

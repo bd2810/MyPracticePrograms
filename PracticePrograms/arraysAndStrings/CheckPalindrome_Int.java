@@ -1,5 +1,5 @@
-package arraysAndStrings;
 /*
+ * Realtor.com
  * Write a method to find out if there exists one combination with the given
  * sequence of characters in a String which is palindrome. Return true if
  * exists else return false
@@ -10,10 +10,12 @@ package arraysAndStrings;
  * or aaaabbbb -> aabbbbaa
  */
 
+package arraysAndStrings;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class CheckPalindrome {
+public class CheckPalindrome_Int {
 
 	public static void main(String[] args) {
 

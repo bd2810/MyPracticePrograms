@@ -1,4 +1,5 @@
-/*
+/* Shutterfly
+ * 
  * Program to merge two string taking alternate characters from each strings
  * e.g. Strings 'Pineapple' and 'Test' ---> 'PTiensetapple'
  * e.g. Strings 'Hello' and 'World' ---> 'HWeolrllod'
@@ -7,7 +8,7 @@
 
 package arraysAndStrings;
 
-public class MergeStringAlternateChar {
+public class MergeStringAlternateChar_Int {
 
 	public static void main(String[] args) {
 		

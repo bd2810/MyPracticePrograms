@@ -1,8 +1,17 @@
+/*
+ * Tableau
+ * Write a program to check if the sudoku board is valid and return result as follows:
+ * 
+ * 1. If invalid - throws exception
+ * 2. If valid and not filled entirely - returns false
+ * 3. If valid and filled entirely - returns true
+ */
+
 package arraysAndStrings;
 
 import java.util.HashSet;
 
-public class SudokuChecker {
+public class SudokuChecker_Int {
 
 	public static boolean isSolved = true;
 	public static boolean rowResult = true;

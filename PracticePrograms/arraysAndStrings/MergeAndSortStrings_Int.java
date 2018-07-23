@@ -1,9 +1,13 @@
+/*
+ * Amazon - web services
+ */
+
 package arraysAndStrings;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class MergeAndSortStrings {
+public class MergeAndSortStrings_Int {
 
 	public static void main(String[] args) {
 
