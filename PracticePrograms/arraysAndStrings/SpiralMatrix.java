@@ -21,21 +21,7 @@ public class SpiralMatrix {
 
 		List<Integer> spiralList = new ArrayList<Integer>();
 
-		for (int i = 0; int j=0; i < matrix.length; i++) {
 
-			if (i % 2 == 0) {
-
-				for (int j = 0; j < matrix[i].length; j++) {
-
-					spiralList.add(matrix[i][j]);
-				}
-			} else {
-				for (int j = matrix[i].length-1; j >=0 ; j--) {
-
-					spiralList.add(matrix[i][j]);
-				}
-			}
-		}
 
 		return spiralList;
 
