@@ -1,4 +1,4 @@
-package general;
+package General;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,6 +35,8 @@ public class DefineDataStructures {
 	
 	@Test
 	public void testList() {
+		
+		Map<Integer, List<Integer>> newList = new HashMap<Integer, List<Integer>>();
 		
 		List<String> list = new ArrayList<String>();
 		list.add("List - first");
